@@ -14,3 +14,21 @@ $("span").click(function(e){
 	//avoid bubbling up 
 	e.stopPropagation();
 });
+
+// New todo
+$("input[type='text']").keypress(function(e){
+	//enter = 13
+	if(e.which===13){
+		// grab text from input
+		var todoText = $(this).val();
+		$(this).val("");
+
+		$("ul").append("<li><span>X</span> "+ todoText + "</li")
+
+
+
+		}
+
+
+	
+});
