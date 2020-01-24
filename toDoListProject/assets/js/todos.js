@@ -25,10 +25,10 @@ $("input[type='text']").keypress(function(e){
 
 		$("ul").append("<li><span><i class='fas fa-trash-alt'></i></span> "+ todoText + "</li")
 
+	}
+});
 
-
-		}
-
-
-	
+// Select the icon "pencil" and fade In/Out
+$(".fa-pencil-alt").click(function(){
+	$("input[type='text']").fadeToggle()
 });
